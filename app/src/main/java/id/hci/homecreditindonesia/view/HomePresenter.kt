@@ -51,12 +51,14 @@ class HomePresenter(var view:HomeContract.HomeView): HomeContract.HomePresenter,
     }
 
     override fun OnButtonTryAgain() {
+        view.showProgresbar()
+        homeAPI.loadData()
     }
 
     fun initAPI(){
         homeAPI= HomeAPI()
         homeAPI.setHomeLoadDataListener(this)
 
-        homeAPI.loadData()
+        //homeAPI.loadData()
     }
 }

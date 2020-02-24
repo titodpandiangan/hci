@@ -25,7 +25,7 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="$MODULE_DIR$/src/debug/kotlin;/Users/titopandiangan/Documents/Android/HomeCreditIndonesia/app/src/debug/java;/Users/titopandiangan/Documents/Android/HomeCreditIndonesia/app/src/release/kotlin;/Users/titopandiangan/Documents/Android/HomeCreditIndonesia/app/src/release/java;/Users/titopandiangan/Documents/Android/HomeCreditIndonesia/app/src/debugAndroidTest/kotlin;/Users/titopandiangan/Documents/Android/HomeCreditIndonesia/app/src/debugUnitTest/kotlin;/Users/titopandiangan/Documents/Android/HomeCreditIndonesia/app/src/releaseUnitTest/kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="$MODULE_DIR$/src/debug/kotlin;/Users/titopandiangan/Documents/Android/hci/app/src/debug/java;/Users/titopandiangan/Documents/Android/hci/app/src/release/kotlin;/Users/titopandiangan/Documents/Android/hci/app/src/release/java;/Users/titopandiangan/Documents/Android/hci/app/src/debugAndroidTest/kotlin;/Users/titopandiangan/Documents/Android/hci/app/src/debugUnitTest/kotlin;/Users/titopandiangan/Documents/Android/hci/app/src/releaseUnitTest/kotlin">
         <compilerSettings>
           <option name="additionalArguments" value="-Xallow-no-source-files" />
         </compilerSettings>

@@ -28,6 +28,7 @@ class HomeActivity : AppCompatActivity(), HomeContract.HomeView {
     lateinit var homePresenter: HomePresenter
     lateinit var homeAdapter: ProductAdapter
     lateinit var articlesAdapter: ArticlesAdapter
+    lateinit var btnTryAgain:TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +41,8 @@ class HomeActivity : AppCompatActivity(), HomeContract.HomeView {
         rvProduct=findViewById(R.id.rvProduct)
         rvArticle=findViewById(R.id.rvArticle)
         progresBar=findViewById(R.id.progressBar)
-        tvMessage=findViewById(R.id.textViewMessage);
+        tvMessage=findViewById(R.id.textViewMessage)
+        btnTryAgain=findViewById(R.id.btnTryAgain)
     }
 
     fun setHomePresenter(){
@@ -82,28 +84,29 @@ class HomeActivity : AppCompatActivity(), HomeContract.HomeView {
     }
 
     override fun showProgresbar() {
-
+        btnTryAgain.visibility=View.INVISIBLE
         tvMessage.visibility=View.VISIBLE
         progresBar.visibility=View.VISIBLE
-
-
         tvMessage.text=resources.getString(R.string.loading)
     }
 
     override fun stopProgresbar() {
-        tvMessage.visibility=View.GONE
-        progresBar.visibility=View.GONE
+        tvMessage.visibility=View.INVISIBLE
+        progresBar.visibility=View.INVISIBLE
+        btnTryAgain.visibility=View.INVISIBLE
     }
 
     override fun showErrorMessage(message: String) {
         tvMessage.visibility=View.VISIBLE
-        progresBar.visibility=View.GONE
-
+        progresBar.visibility=View.INVISIBLE
+        btnTryAgain.visibility=View.VISIBLE
         tvMessage.text=message
     }
 
     override fun onClickListener() {
-
+        btnTryAgain.setOnClickListener {
+            homePresenter.OnButtonTryAgain()
+        }
     }
 
     fun directToBrowser(linkData: String){

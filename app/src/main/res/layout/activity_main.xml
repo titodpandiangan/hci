@@ -53,6 +53,14 @@
         android:layout_below="@id/progressBar"
         android:textAlignment="center"
         android:text="@string/loading"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTryAgain"
+        android:textAlignment="center"
+        android:text="@string/try_again"
+        android:layout_below="@id/textViewMessage"
+        android:textColor="@color/colorBlue"/>
 
 
 </RelativeLayout>
