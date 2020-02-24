@@ -59,6 +59,6 @@ class HomePresenter(var view:HomeContract.HomeView): HomeContract.HomePresenter,
         homeAPI= HomeAPI()
         homeAPI.setHomeLoadDataListener(this)
 
-        //homeAPI.loadData()
+        homeAPI.loadData()
     }
 }
